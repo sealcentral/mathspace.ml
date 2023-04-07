@@ -62,21 +62,3 @@
 </script>
 <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" defer=""></script>
 <script src="/dist/gameframe-c3886414.js" defer=""></script>
-<script>
-    var preAd = window.preAd || {};
-    if (gameData.isExternal) {
-        preAd.adVendorName = 'YB (for External)';
-        preAd.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
-            'iu=/52555387,22538980388/twoplayergames.org_640x480_video_v1&description_url=' + encodeURI(gameData.url) +
-            '&tfcd=0&npa=0&sz=400x300%7C620x384%7C640x480&max_ad_duration=30000&gdfp_req=1&output=vast' +
-            '&unviewed_position_start=1&env=vp&impl=s&correlator=';
-    } else {
-        preAd.adVendorName = 'YB';
-        preAd.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
-            'sz=400x300|640x480&iu=/52555387,22538980388/twoplayergames.org_640x480_video&impl=s&gdfp_req=1&env=vp&' +
-            'output=vast&unviewed_position_start=1&' +
-            'description_url=' + encodeURI(gameData.url) + '&correlator=';
-    }
-</script>
-
-</body></html>
