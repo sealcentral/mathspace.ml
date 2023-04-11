@@ -179,4 +179,14 @@ body::-webkit-scrollbar {
     width: 30%;
     padding: 2rem;
     bottom: 25%;
+    background: none;
+}
+
+#SideLogo {
+  z-index: 0;
+  max-block-size: 500px;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateX(-100%);
 }
