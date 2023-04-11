@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Sans+Extra+Condensed:wght@700&family=Inter:wght@400;500;600;700;800&display=swap');
+* {
+    background: #1c1c1c;
+    padding: 0;
+    margin: 0;
+    transition: all 0.1s ease-in;
+    font-family: 'comfortaa';
+    text-decoration: none;
+ }
+ html {
+    color: #ddd;
+ }
+ .Main {
+    font-weight: 700;
+ }
+ a:link { text-decoration: none; color:#ddd; }
+
+
+a:visited { text-decoration: none; color:#ddd; }
+
+
+a:hover { text-decoration: none; color:#ddd; }
+
+
+a:active { text-decoration: none; color:#ddd; }
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+  
+    background: #141414;
+  }
+   
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #808080; 
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #ddd; 
+  }
+
+.topnav {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    font-weight: 900;
+    overflow: hidden;
+    background-color: #141414;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #ddd;
+    text-align: center;
+    padding: 18px 20px ;
+    text-decoration: none;
+    font-size: 17px;
+    background: #808080;
+  }
+  
+  .topnav a:hover {
+    background-color: #ff9900;
+    color: #00001d
+  }
+  
+  .topnav a.active {
+    background-color: #00001d;
+    color: #ddd;
+    text-decoration: dotted;
+  }
+  #Socials {
+    float: right;
+  }
+  #Socials:hover {
+    color: #ddd;
+    float: right;
+    background-color: #5555FF;
+  }
+  #Partners {
+    float: right;
+  }
+  #Partners:hover {
+    color: #ddd;
+    float: right;
+    background-color: #ff9900;
+  }
+  #Features:hover {
+    color: #ddd;
+    background-color: #189696;
+  }
+  #Home:hover {
+    color: #00001d;
+    background-color: #187a18;
+  }
+  #Home:hover.active {
+    color: #ddd;
+    background-color: #00001d;
+  }
+  #Updates:hover {
+    color: #00001d;
+    background-color: #FF5555;
+  }
+  
+  #Logo {
+    transform: translateY(50%);
+    float: left;
+    max-block-size: 2em;
+  }
+  .footer-container {
+    bottom: 0;
+    position: absolute;
+    background: #212329;
+    padding-bottom: 2rem 0 2rem 0;
+    width: 100%;
+    transform: translateY(105%);
+  }
+  .footer {
+    width: 100%;
+    height: 25vh;
+    background: #212329;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    overflow-y: hidden;
+  }
+.footer-heading {
+    background: #212329;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+    background: #212329;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.footer-heading a {
+    text-align: center;
+    background: #212329;
+  color: #ddd;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover {
+    background: #212329;
+  color: #FF5555;
+  transition: 0.3s ease-in-out;
+}
+.footer-heading h2:hover {
+    cursor: pointer;
+    background: #212329;
+  color: #FF5555;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 50vh;
+  }
+  .footer-email-form {
+    margin-top: 4rem;
+  }
+}
+
+#Content {
+    z-index: 0;
+    font-size: 1.5rem;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    padding: 2rem;
+    bottom: 25%;
+}
