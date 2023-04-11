@@ -54,7 +54,8 @@ body::-webkit-scrollbar {
   }
   
   .topnav a:hover {
-    background-color: #AA3838;
+    background-color: #ddd;
+    color: #00001d;
   }
   
   .topnav a.active {
