@@ -162,3 +162,32 @@ body::-webkit-scrollbar {
     color: white;
     text-align: center;
   }
+.card {
+ cursor: pointer;
+ color: #ddd;
+ overflow: hidden;
+ position: absolute;
+ left: 50%;
+ bottom: 50%;
+transform: translateX(-50%);
+ box-shadow: 0 4px 8px 0 #AA3838;
+transition: 0.3s;
+height: 25%;
+width: 10%;
+ border-radius: 5px;
+            }
+
+            .card:hover {
+            box-shadow: 0 8px 16px 0 #E64E4E;
+            }
+
+            img {
+            border-radius: 5px 5px 0 0;
+            }
+
+            .container {
+            padding: 2px 16px;
+            }
+              .card a {
+                  text-decoration: none;
+              }
