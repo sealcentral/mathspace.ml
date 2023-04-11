@@ -124,7 +124,7 @@ body::-webkit-scrollbar {
   margin-bottom: 1rem;
 }
 #footer-email::placeholder {
-  color: #00001d
+  color: #00001d;
 }
 #footer-email-btn {
   width: 100px;
