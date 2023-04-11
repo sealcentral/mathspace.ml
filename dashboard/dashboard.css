@@ -35,6 +35,7 @@ body::-webkit-scrollbar {
   }
 
   .topnav {
+    z-index: 100;
     width: 100%;
     position: fixed;
     font-weight: 700;
