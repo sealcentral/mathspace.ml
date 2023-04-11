@@ -67,7 +67,8 @@ body::-webkit-scrollbar {
   
   .topnav a:hover {
     background-color: #ff9900;
-    color: #00001d
+    color: #00001d;
+    cursor: pointer;
   }
   
   .topnav a.active {
@@ -83,6 +84,10 @@ body::-webkit-scrollbar {
     float: right;
     background-color: #5555FF;
   }
+  #Social:hover.active {
+    color: #ddd;
+    background-color: #00001d;
+  }
   #Partners {
     float: right;
   }
@@ -91,9 +96,17 @@ body::-webkit-scrollbar {
     float: right;
     background-color: #ff9900;
   }
+  #Partners:hover.active {
+    color: #ddd;
+    background-color: #00001d;
+  }
   #Features:hover {
     color: #ddd;
     background-color: #189696;
+  }
+  #Features:hover.active {
+    color: #ddd;
+    background-color: #00001d;
   }
   #Home:hover {
     color: #00001d;
@@ -107,7 +120,10 @@ body::-webkit-scrollbar {
     color: #00001d;
     background-color: #FF5555;
   }
-  
+  #Updates:hover.active {
+    color: #ddd;
+    background-color: #00001d;
+  }
   #Logo {
     transform: translateY(50%);
     float: left;
@@ -184,12 +200,7 @@ body::-webkit-scrollbar {
 }
 
 #SideLogo {
-  z-index: 0;
-  max-block-size: 250px;
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  transform: translateX(-100%);
+  max-block-size: 1rem;
 }
 
 .mySlides {display: none}
