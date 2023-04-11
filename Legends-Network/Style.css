@@ -184,7 +184,7 @@ body::-webkit-scrollbar {
 
 #SideLogo {
   z-index: 0;
-  max-block-size: 500px;
+  max-block-size: 250px;
   position: absolute;
   right: 0;
   bottom: 50%;
