@@ -12,8 +12,8 @@
 <body>
     <div class="Main">
         <div class="topnav">
-            <a href="#" id="Home" class="active">Home</a>
-            <a href="#" id="Updates">Updates</a>
+            <a id="Home" class="active">Home</a>
+            <a href="/Updates.html" id="Updates">Updates</a>
             <a href="#" id="Partners">Partners</a>
             <a href="#" id="Features">Features</a>
             <a href="#" id="Socials">Socials</a>
@@ -96,19 +96,34 @@
             <div class="footer">
               <div class="footer-heading footer-1">
                 <h2>Legends Network</h2>
-                <a href="#">Contacts</a>
-                <a href="#">Legal info</a>
-                <a href="#">Services</a>
-                <a href="#">Copyright</a>
+                <a style="cursor: pointer;" >Contacts</a>
+                <a style="cursor: pointer;" >Legal info</a>
+                <a style="cursor: pointer;" >Services</a>
+                <a style="cursor: pointer;" >Copyright</a>
               </div>
               <div class="footer-heading footer-2">
                 <h2>Social Media</h2>
                 <a href="https://discord.gg/yCJvBhPhVZ" target="_blank">Discord</a>
-                <a href="#">Xbox</a>
+                <a href="https://realms.gg/JG8rwHwx3_s" target="_blank">Realm Invite</a>
+                <a style="cursor: pointer;" onclick="CopyXbox()">Xbox</a>
+                <script>
+                  function CopyXbox() {
+                    // Get the text field
+                    var copyText = document.getElementById("myInput");
+                  
+                    // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+                  
+                    // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
+                  }
+                  </script>
               </div>
             </div>
           </div>
     </div>
+    <input type="text" id="myInput" value="TMGrant Crzygamer999 IlIMakoIlI">
 </body>
   <script>
   </script>
