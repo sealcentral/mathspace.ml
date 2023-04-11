@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Sans+Extra+Condensed:wght@700&family=Inter:wght@400;500;600;700;800&display=swap');
 * {
+  overflow-x: hidden;
     background: #1c1c1c;
     padding: 0;
     margin: 0;
@@ -184,9 +185,93 @@ body::-webkit-scrollbar {
 
 #SideLogo {
   z-index: 0;
-  max-block-size: 250px;
+  max-block-size: 500px;
   position: absolute;
   right: 0;
   bottom: 50%;
   transform: translateX(-100%);
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  overflow: hidden;
+  max-width: 80%;
+  position: absolute;
+  bottom: 25%;
+  right: 50%;
+  transform: translateX(60%);
+  margin: auto;
+  width: 40%;
+  height: 40%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ddd;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ddd;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 85%;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ddd;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
