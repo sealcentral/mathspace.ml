@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Sans+Extra+Condensed:wght@700&family=Inter:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'comfortaa';
+}
+
+body {
+    background: #00001d;
+    height: 250vh;
+    transition: all 0.5s;
+}
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+  
+    background: #000037;
+  }
+   
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #000084; 
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #0000b7; 
+  }
+
+  .topnav {
+    width: 100%;
+    position: fixed;
+    font-weight: 700;
+    overflow: hidden;
+    background-color: #000037;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px ;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 2px;
+  }
+  
+  .topnav a:hover {
+    background-color: #f55656;
+  }
+  
+  .topnav a.active {
+    background-color: #E64E4E;
+    color: white;
+  }
+
+  #Account {
+    float: right;
+  }
+
+  #Logo {
+    transform: translateY(50%);
+    float: left;
+    max-block-size: 2em;
+  }
+  .topnav a:hover.active {
+    background-color: #f55656;
+    color: white;
+  }
