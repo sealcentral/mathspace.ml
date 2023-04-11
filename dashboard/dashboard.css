@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Sans+Extra+Condensed:wght@700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Sans+Extra+Condensed:wght@700&family=Inter:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -59,8 +59,9 @@ body::-webkit-scrollbar {
   }
   
   .topnav a.active {
-    background-color: #E64E4E;
+    background-color: #ff5555;
     color: white;
+    cursor: pointer;
   }
 
   #Account {
@@ -102,6 +103,7 @@ body::-webkit-scrollbar {
 
 }
 .footer-heading a {
+  text-align: center;
   color: #ddd;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -126,7 +128,7 @@ body::-webkit-scrollbar {
   margin-bottom: 1rem;
 }
 #footer-email::placeholder {
-  color: #00001d;
+  color: #00001d
 }
 #footer-email-btn {
   width: 100px;
@@ -155,12 +157,87 @@ body::-webkit-scrollbar {
 .maincontent {
     width: 100%;
     position: absolute;
-    top:60%;
-    left:17%;
+    top:50%;
+    left:0%;
+    transform: translateX(15%);
+
     margin-left:-200px;
     font-weight: 700;
     overflow: hidden;
     background-color: #00001d;
     color: white;
     text-align: center;
+  }
+
+
+.inputs-container {
+  left: 50%;
+  transform: translateX(0%);
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'comfortaa';
+  font-weight: 700;
+}
+
+#ChatGPT-Q-I {
+  box-shadow: 0 0px 8px 0 #AA3838;
+  color: #ddd;
+  text-size-adjust: relative;
+  padding: 1rem;
+  width: 60%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background: #141414;
+  border: none;
+}
+
+#ChatGPT-Q-I:hover {
+  box-shadow: 0 0px 16px 0 #E64E4E;
+transition: all 0.4s ease-out;
+}
+
+
+#Q-BTN-Send:hover {
+  box-shadow: 0 0px 16px 0 #E64E4E;
+  transition: all 0.4s ease-out;
+  }
+  
+#Q-BTN-Send {
+  box-shadow: 0 0px 8px 0 #AA3838;
+  color: #ddd;
+  background: #141414;
+  padding: 1rem;
+  width: 10%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-popup-container h2 {
+  padding: 0.5rem;
+}
+
+.text-popup-container h3 {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+  .ChatGPT-container {
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    font-size: 1rem;
+    color: #ddd;
+    background: #1c1c1c;
+    bottom: 50%;
+    transform: translateY(55%);
+  }
+  .div-User-Q {
+    text-align: right;
+  }
+  .div-User-Name {
+    position: relative;
+    text-align: right;
+    padding-right: 2rem;
   }
