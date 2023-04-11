@@ -7,9 +7,9 @@
     content="HTML, CSS, JavaScript, SealCentral, Seal, Unblocked. Unblocked games, games, movies, tv, tvshows, sealflix, netflix, hulu, hbo, game, shadymoon, moon, shady, daza, mumin, muminwilmer, wilmer, shrimple, shrimp, luna, dox, lunadox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShadyMoon | games</title>
-    <link rel="icon" type="image/x-icon" href="../../../assets/Seal.png">
+    <link rel="icon" type="image/x-icon" href="/Seal.png">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="stylesheet" href="dashboard.css">
     <style>
 a:link { text-decoration: none; color:#ddd; }
 
@@ -57,18 +57,20 @@ width: 10%;
 <body>
     <div class="Main">
         <div class="topnav">
-            <img id="Logo" src="../../../assets/Seal.png">
-            <a id="Dashboard" href="../../dashboard">Dashboard</a>
+            <img id="Logo" src="/Seal.png">
+            <a id="Dashboard" href="/dashboard">Dashboard</a>
             <a id="Games" class="active">Games</a>
             <a id="Proxy" href="#Proxy">Proxy</a>
             <a id="ChatGPT" href="#ChatGPT">ChatGPT</a>
             <a id="Account" href="#Account">Account</a>
           </div>
           <div class="card">
-            <img src="../../../assets/example.png" alt="GameCard" style="width:100%">
+            <a onclick="Game1()">
+            <img src="../../games/assets/pics/action/OvO/Banner.png" alt="GameCard" style="width:100%">
             <div class="container">
               <h4><b>Example Game</b></h4> 
             </div>
+          </a>
           </div>
           
           <script>
@@ -132,7 +134,34 @@ width: 10%;
               </div>
             </div>
     </div>
-
+<script>
+  function Game1() {
+    var urlObj = new window.URL(window.location.href);
+    var input = "action/OvO/"; // BASE64 M/C/Y
+    var url = "https://shadymoon.xyz/games/" + input ; //Url sugestions here, doesnt make much sense to use the actual base 64 as much rather use "input;" because then it'd be useless
+    if (url) {
+        var win;
+        
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background='#ff5148';
+            document.querySelector('button').innerHTML="Launched!"
+        };
+}
+</script>
 
 </body>
 
